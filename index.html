@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Git & GitHub!</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Git & GitHub</h1>
+					<h3>Git you some knowledge!</h3>
+					<p>
+						<small>Created by <a href="http://seanhagen.ca">Sean Patrick Hagen</a> / <a href="http://twitter.com/seanhagen">@seanhagen</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Heads Up</h2>
+					<p>This is a presentation for how to use Git, and GitHub.</p> 
+                    <p>We'll start of with some basics, before moving into some of the more fun stuff.</p>
+					</p>
+
+					<aside class="notes">
+					</aside>
+				</section>
+
+                <section>
+                  <h2>So, What Is Git?</h2>
+                  <p class="fragment">At it's core, it's a <em>distributed revision control</em> system</p>
+                  <p class="fragment">As well as a <em>source code management</em> system</p>
+                </section>
+
+                <section>
+                  <h2>Distributed?</h2>
+                  <p class="fragment">No central service to manage the revisions</p>
+                  <aside class="notes">
+                    <p>This means that every person has a full copy of the repository</p>
+                    <p>It can be pretty awesome, but it's also got some cons</p>
+                    <ul>
+                      <li>PRO: can work offline!</li>
+                      <li>PRO: don't need to contact a central server to commit changes or view history</li>
+                      <li>PRO: every copy is now a backup of the code</li>
+                      <li>CON: repos can get HUGE</li>
+                    </ul>
+                  </aside>
+                </section>
+
+                <section>
+                  <h2>So What?</h2>
+                  <p>What does that mean for me?</p>
+                </section>
+
+                <section>
+                  <h2>Explore Ideas</h2>
+                  <p class="fragment">Create branches to explore an idea, discard the branch if it doesn't work out</p>
+                  <p class="fragment">Or merge the branch in if it turns out to be an awesome idea</p>
+                </section>
+
+                <section>
+                  <h2>Basics</h2>
+                  <p class="fragment">At it's core, Git is a command line tool.</p>
+                  <p class="fragment">GUIs are okay, but the command line is where it's at.</p>
+                </section>
+
+                <section>
+                  <section>
+                    <h2>Getting Started</h2>
+                    <h3>Cloning Your Way To Victory</h3>
+                    <h5>AKA: The Star Wars Approach</h5>
+                    <h6><small>Not Really</small></h6>
+                  </section>
+
+                  <section>
+                    <h2>Cloning Gets You Started</h2>
+                    <code>git clone &lt;repository url&gt;</code>
+                    <p>Now you've got a copy of the code!</p>
+                  </section>
+
+                  <section>
+                    <h2>Examples Repo URLs</h2>
+                    <ul>
+
+                      <li><code>/home/sean/some-project</code></li>
+                      <li><code>artifact-server:porcupine.git</code></li>
+                      <li><code>ssh://[user@]host:path/to/repo.git</code></li>
+                  </section>
+
+                  <section>
+                    <h2>GitHub</h2>
+                    <p>GitHub tends to use the following format:</p>
+                    <p><code>git@github.com:&lt;your github username&gt;/&lt;repo name&gt;.git</code></p>
+                    <div class="fragment">
+                      <p>This presentation can be cloned from:</p>
+                      <p><code>git clone git@github.com:seanhagen/git-presentation.git</code></p>
+                    </div>
+                  </section>
+
+                  <section>
+                    <h2>Tips!</h2>
+                    <p>Here are a few flags that you might find useful when cloning:</p>
+                    <ul>
+                      <li><code>--branch &lt;name&gt;</code><br/> clone a specific branch</li>
+                      <li><code>--depth &lt;num&gt;</code><br/> only clone the specified number of revisions</li>
+                    </ul>
+                  </section>
+
+				  <aside class="notes">
+                    <p><strong>depth</strong>: useful when you want to get a shallow copy, like if you're deploying a demo to server</p>
+				  </aside>
+
+                </section>
+
+                <section>
+                  <!-- doing work -->
+                  <section>
+                    <h2>Getting Stuff Done</h2>
+                    <p class="fragment">Okay, so you've got a copy of the code.</p>
+                    <h3 class="fragment">NOW WHAT?</h3>
+                  </section>
+
+                  <!-- status -->
+                  <section>
+                    <h2>What's The Status?</h2>
+                    <p><code>git status</code></p>
+                    <aside class="notes">
+                      <p>Gives you a list of the following:
+                      <ul>
+                        <li>Changes that git are going to be comittted ( more later )</li>
+                        <li>Files git isn't tracking yet</li>
+                      </ul>
+                    </aside>
+                  </section>
+
+                  <!-- adding files -->
+                  <section>
+                    <h2>Adding Files</h2>
+                    <p>This lets <strong>git</strong> know what to keep track of</p>
+                    <p><code>git add path/to/file</code></p>
+                  </section>
+
+                  <!-- removing files -->
+                  <section>
+                    <h2>Removing Files</h2>
+                    <p>Tell git you don't want it to track it anymore, and to remove it from the working tree</p>
+                    <p><code>git rm path/to/file</code></p>
+                  </section>
+
+                  <!-- committing changes -->
+
+                  <!-- pushing those changes -->
+                </section>
+
+                <!-- reverting work -->
+
+                <!-- creating branches -->
+
+                <!-- multiple origins -->
+
+                <!-- merging branches -->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
