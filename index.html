@@ -328,7 +328,11 @@
             <p>You can push to it like so:</p>
             <p><code>git push -u origin master</code></p>
             <p class="fragment">The <strong>-u</strong> tells git you'd like add it as a tracking reference</p>
-            <p class="fragment">Which helps when you want to pull stuff down later</p>
+            <div class="fragment">
+              <p>This means that later all you have to do is:</p>
+              <p><code>git push</code></p>
+            </div>
+            <p class="fragment">It also helps when you want to pull stuff down later</p>
           </section>
 
           <section>
@@ -677,12 +681,17 @@
 
           <section>
             <h2>Tell me how</h2>
-            <p>First, use <code>git log</code> or GitHub to find the first 6 or 7 characters of the commit you want to cherry pick.</p>
-            <pre>
+            <p>First, check out the branch you want to cherry pick <em>from</em></p>
+            <p><code>git checkout feature-thing</code></p>
+
+            <div class="fragment">
+              <p>Next,use <code>git log</code> or GitHub to find the first 6 or 7 characters of the commit you want to cherry pick.</p>
+              <pre>
 commit 851a061f353976dd37d11fe6e6d2ec21ccce8234
 Author: Sean Patrick Hagen 
 Date:   Thu Feb 20 18:47:06 2014 -0800
-</pre>
+              </pre>
+            </div>
             <div class="fragment">
               <p>Then switch to the branch you want to insert the commit into:</p>
               <p><code>git checkout my-awesome-feature</code></p>
@@ -715,7 +724,7 @@ Date:   Thu Feb 20 18:47:06 2014 -0800
             <h2>What is it?</h2>
             <h4>And Why Should I Care?</h4>
 
-            <p><code>git bisect</code> helps you find a bad commit between any two commits.</p>
+            <p class="fragment"><code>git bisect</code> helps you find a bad commit between any two commits.</p>
           </section>
 
           <section>
