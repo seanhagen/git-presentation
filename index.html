@@ -25,9 +25,6 @@
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
 	</head>
 
 	<body>
@@ -45,595 +42,1004 @@
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>This is a presentation for how to use Git, and GitHub.</p> 
-                    <p>We'll start of with some basics, before moving into some of the more fun stuff.</p>
-
-                    <h3 class="fragment">Ready?</h3>
-                    <img class="fragment" src="/img/2eobgr6.gif"/>
+					<h2>What's This For?</h2>
+          <h3 class="fragment">First: Git</h3>
+          <h3 class="fragment">Second: GitHub</h3>
+          <h2 class="fragment">Ready?</h2>
+          <img class="fragment" src="/img/2eobgr6.gif"/>
 
 					<aside class="notes">
 					</aside>
 				</section>
 
-                <section>
-                  <h2>So, What Is Git?</h2>
-                  <p class="fragment">At it's core, it's a <em>distributed revision control</em> system</p>
-                  <p class="fragment">As well as a <em>source code management</em> system</p>
-                  <img class="fragment" src="/img/dFVsfqM.gif" />
-                </section>
+        <section>
+          <h2>So, What Is Git?</h2>
+          <p class="fragment">At it's core, it's a <em>distributed revision control</em> system</p>
+          <p class="fragment">As well as a <em>source code management</em> system</p>
+          <img class="fragment" src="/img/dFVsfqM.gif" />
+        </section>
 
-                <section>
-                  <h2>Distributed?</h2>
-                  <p class="fragment">No central service to manage the revisions</p>
-                  <aside class="notes">
-                    <p>This means that every person has a full copy of the repository</p>
-                    <p>It can be pretty awesome, but it's also got some cons</p>
-                    <ul>
-                      <li>PRO: can work offline!</li>
-                      <li>PRO: don't need to contact a central server to commit changes or view history</li>
-                      <li>PRO: every copy is now a backup of the code</li>
-                      <li>CON: repos can get HUGE</li>
-                    </ul>
-                  </aside>
-                </section>
+        <section>
+          <h2>What Makes Git</h2>
+          <h1>Awesome?</h1>
+        </section>
 
-                <section>
-                  <h2>So What?</h2>
-                  <p>What does that mean for me?</p>
-                </section>
+        <section>
+          <h2>It's Distributed</h2>
+        </section>
 
-                <section>
-                  <h2>Explore Ideas</h2>
-                  <p>Create branches to explore an idea, discard the branch if it doesn't work out</p>
-                  <img src="/img/notawesome_zpsdc2d095f.gif" />
-                </section>
+        <section>
+          <h2>Distributed?</h2>
+          <p class="fragment">No central service to manage the revisions</p>
+          <aside class="notes">
+            <p>This means that every person has a full copy of the repository</p>
+            <p>It can be pretty awesome, but it's also got some cons</p>
+            <ul>
+              <li>PRO: can work offline!</li>
+              <li>PRO: don't need to contact a central server to commit changes or view history</li>
+              <li>PRO: every copy is now a backup of the code</li>
+              <li>CON: repos can get HUGE</li>
+            </ul>
+          </aside>
+        </section>
 
-                <section>
-                  <h2>Explore Ideas</h2>
-                  <p>Or merge the branch in if it turns out to be an awesome idea</p>
-                  <img src="/img/excited-adventure-time.gif" />
-                </section>
+        <section>
+          <h2>What Makes Git</h2>
+          <h1>Awesome?</h1>
+        </section>
+        <section>
+          <h2>It's Branching!</h2>
+        </section>
 
-                <section>
-                  <h2>Basics</h2>
-                  <p class="fragment">At it's core, Git is a command line tool.</p>
-                  <p class="fragment">GUIs are okay, but the command line is where it's at.</p>
-                  <img class="fragment" src="/img/tumblr_m9rcg1wZyp1rrenito1_500.gif" />
-                </section>
+        <section>
+          <h2>Explore Ideas</h2>
+          <p>Create branches to explore an idea, discard the branch if it doesn't work out</p>
+          <img src="/img/notawesome_zpsdc2d095f.gif" />
+        </section>
 
-                <section>
-                  <section>
-                    <h2>Getting Started</h2>
-                    <h3>Cloning Your Way To Victory</h3>
-                    <h5>AKA: The Star Wars Approach</h5>
-                    <h6><small>Not Really</small></h6>
-                    <img src="/img/Clone_Troopers_by_unit138.gif" />
-                  </section>
+        <section>
+          <h2>Explore Ideas</h2>
+          <p>Or merge the branch in if it turns out to be an awesome idea</p>
+          <img src="/img/excited-adventure-time.gif" />
+        </section>
 
-                  <section>
-                    <h2>Cloning Gets You Started</h2>
-                    <code>git clone &lt;repository url&gt;</code>
-                    <p>Now you've got a copy of the code!</p>
-                    <img class="fragment" src="/img/tumblr_m9g12dENqL1rqfhi2o1_250.gif" />
-                  </section>
+        <section>
+          <h2>What Makes Git</h2>
+          <h1>Awesome?</h1>
+        </section>
+        <section>
+          <h2>Supports Just About Any Workflow</h2>
+          <p class="fragment">Easily create branches for features, bugs, tasks</p>
+          <p class="fragment">Merge code quickly between those branches</p>
+          <p class="fragment">Share the code really easily</p>
+        </section>
 
-                  <section>
-                    <h2>Examples Repo URLs</h2>
-                    <ul>
+        <section>
+          <h2>What Makes Git</h2>
+          <h1>Awesome?</h1>
+        </section>
+        <section>
+          <h2>It's Got GitHub</h2>
+          <p class="fragment">While this isn't a feature of the tool, GitHub makes Git awesome.</p>
+        </section>
 
-                      <li><code>/home/sean/some-project</code></li>
-                      <li><code>artifact-server:porcupine.git</code></li>
-                      <li><code>ssh://[user@]host:path/to/repo.git</code></li>
-                  </section>
+        <section>
+          <h2>Getting Down To Brass Tacks</h2>
+          <p class="fragment">At it's core, Git is a command line tool.</p>
+          <p class="fragment">GUIs are okay, but the command line is where it's at.</p>
+          <img class="fragment" src="/img/tumblr_m9rcg1wZyp1rrenito1_500.gif" />
+        </section>
 
-                  <section>
-                    <h2>GitHub</h2>
-                    <p>GitHub tends to use the following format:</p>
-                    <p><code>git@github.com:&lt;your github username&gt;/&lt;repo name&gt;.git</code></p>
-                    <div class="fragment">
-                      <p>This presentation can be cloned from:</p>
-                      <p><code>git clone git@github.com:seanhagen/git-presentation.git</code></p>
-                    </div>
-                  </section>
+        <section>
+          <section>
+            <h2>Getting Started</h2>
+            <h3>Cloning Your Way To Victory</h3>
+            <h5>AKA: The Star Wars Approach</h5>
+            <h6><small>Not Really</small></h6>
+            <img src="/img/Clone_Troopers_by_unit138.gif" />
+          </section>
 
-                  <section>
-                    <h2>Tips!</h2>
-                    <p>Here are a few flags that you might find useful when cloning:</p>
-                    <ul>
-                      <li><code>--branch &lt;name&gt;</code><br/> clone a specific branch</li>
-                      <li><code>--depth &lt;num&gt;</code><br/> only clone the specified number of revisions</li>
-                    </ul>
-                  </section>
+          <section>
+            <h2>Cloning Gets You Started</h2>
+            <code>git clone &lt;repository url&gt;</code>
+            <p>Now you've got a copy of the code!</p>
+            <img class="fragment" src="/img/tumblr_m9g12dENqL1rqfhi2o1_250.gif" />
+          </section>
+
+          <section>
+            <h2>Examples Repo URLs</h2>
+            <ul>
+
+              <li><code>/home/sean/some-project</code></li>
+              <li><code>ssh://[user@]host:path/to/repo.git</code></li>
+          </section>
+
+          <section>
+            <h2>GitHub</h2>
+            <p>GitHub tends to use the following format:</p>
+            <p><code>git@github.com:&lt;your github username&gt;/&lt;repo name&gt;.git</code></p>
+            <div class="fragment">
+              <p>This presentation can be cloned from:</p>
+              <p><code>git clone git@github.com:seanhagen/git-presentation.git</code></p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Tips!</h2>
+            <p>Here are a few flags that you might find useful when cloning:</p>
+            <ul>
+              <li><code>--branch &lt;name&gt;</code><br/> clone a specific branch</li>
+              <li><code>--depth &lt;num&gt;</code><br/> only clone the specified number of revisions</li>
+            </ul>
+          </section>
 
 				  <aside class="notes">
-                    <p><strong>depth</strong>: useful when you want to get a shallow copy, like if you're deploying a demo to server</p>
+            <p><strong>depth</strong>: useful when you want to get a shallow copy, like if you're deploying a demo to server</p>
 				  </aside>
 
-                </section>
+        </section>
 
-                <section>
-                  <!-- doing work -->
-                  <section>
-                    <h2>Getting Stuff Done</h2>
-                    <p class="fragment">Okay, so you've got a copy of the code.</p>
-                    <h3 class="fragment">NOW WHAT?</h3>
-                  </section>
+        <section>
+          <!-- doing work -->
+          <section>
+            <h2>Getting Stuff Done</h2>
+            <p class="fragment">Okay, so you've got a copy of the code.</p>
+            <h3 class="fragment">NOW WHAT?</h3>
+          </section>
 
-                  <!-- status -->
-                  <section>
-                    <h2>What's The Status?</h2>
-                    <p><code>git status</code></p>
-                    <aside class="notes">
-                      <p>Gives you a list of the following:
-                      <ul>
-                        <li>Changes that git are going to be comittted ( more later )</li>
-                        <li>Files git isn't tracking yet</li>
-                      </ul>
-                    </aside>
-                  </section>
+          <!-- status -->
+          <section>
+            <h2>What's The Status?</h2>
+            <p><code>git status</code></p>
+            <aside class="notes">
+              <p>Gives you a list of the following:
+                <ul>
+                  <li>Changes that git are going to be comittted ( more later )</li>
+                  <li>Files git isn't tracking yet</li>
+                </ul>
+            </aside>
+          </section>
 
-                  <section>
-                    <h2>Example Status</h2>
-<pre>
+          <section>
+            <h2>Example Status</h2>
+            <pre>
+              $ git status
+              # On branch feature-optimize-library-search
+              # Changes not staged for commit:
+              #   (use "git add <file>..." to update what will be committed)
+              #   (use "git checkout -- <file>..." to discard changes in working directory)
+              #
+              #       modified:   application/configs/application.ini
+              #       modified:   application/index.php
+              #       modified:   application/routers/example.php
+              #
+              no changes added to commit (use "git add" and/or "git commit -a")
+            </pre>                    
+          </section>
+
+          <!-- adding files -->
+          <section>
+            <h2>Adding Files</h2>
+            <p>This tells git about a new file, or lets it know about changes in a file.</p>
+            <p><code>git add path/to/file</code></p>
+            <p class="fragment">Technically, you're actually "staging" content for your next commit</p>
+            <div class="fragment">
+              <p>Here are a few useful flags for when you're adding files:</p>
+              <ul>
+                <li class="fragment">--force</li>
+                <li class="fragment">-A, --all</li>
+              </ul>
+              <p class="fragment">
+                <img src="/img/Everything-Changed-castor-from-tron-legacy-20038660-500-211.gif" />
+              </p>
+            </div>
+            
+            <aside class="notes">
+              <ul>
+                <li><strong>--force</strong>: allows you to add a file that would otherwise be ignored, eg, if you were ignoring a path in your .gitignore ( more later ), you could add a file anyways</li>
+                <li><strong>-A, --all</strong>:add new files as well as staging modified content</li>
+              </ul>
+            </aside>
+          </section>
+
+          <!-- removing files -->
+          <section>
+            <h2>Removing Files</h2>
+            <p>Tell git you don't want it to track it anymore,<br/> and to remove it from the working tree</p>
+            <p><code>git rm path/to/file</code></p>
+            <img src="/img/epicgarbageshot1.gif" />
+          </section>
+
+          <section>
+            <h2>Seeing What's Changed</h2>
+            <p>Once you've changed a file, sometimes you want to know what's changed before you commit it</p>
+            <p><code>git diff path/to/file</code></p>
+            <div class="fragment">
+              <pre>
+                $ git diff application/routers/example.php
+                diff --git a/application/routers/example.php b/application/routers/example.php
+                index 7897b19..a948510 100644
+                --- a/application/routers/example.php
+                +++ b/application/routers/example.php
+                @@ -181,7 +181,7 @@ $app->delete( '/api/video/:videoid',
+                $getUserObject,
+                $checkVideoOwner,
+                -    function( $videoid ) use ( $app, $env ) {
+                +    function( $videoid ) use ( $app, $env, $acl ) {
+              </pre>
+            </div>
+          </section>
+
+          <!-- committing changes -->
+          <section>
+            <h2>Commit Them Changes!</h2>
+            <p>Now that you've added some files, time to store those changes!</p>
+            <p><code>git commit</code></p>
+            <div class="fragment">
+              <p>Useful options:</p>
+              <ul>
+                <li>-a, --all</li>
+              </ul>
+            </div>
+
+            <aside class="notes">
+              <ul>
+                <li><strong>-a, --all</strong>: automatically stage files that have been modified and deleted, but not new files</li>
+                <li>
+              </ul>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Be Awesome</h2>
+            <h3>Write Good Commit Messages</h3>
+
+            <p>When you use commit, git will bring up an editor <br/>for you to use to write a commit message.</p>
+            <p>Be awesome to your coworkers, and write a good description.</p>
+            <p>It should follow the following format:</p>
+
+            <pre>
+              Maximum 80 character brief description
+              
+              In-depth list of modifications made to each file in the commit.
+            </pre>
+          </section>
+
+          <section>
+            <h2>Why?</h2>
+            <h4 class="fragment">Because I Said So</h4>
+
+            <div class="fragment">
+              <p>Actually, it's because the git log ( and GitHub ) use the first 80 characters as a sort of title</p>
+              <img src="/img/git-commit-too-long.jpg" />
+              <img src="/img/git-commit-too-long-2.jpg" />
+            </div>
+          </section>
+
+          <!-- pushing those changes -->
+          <section>
+            <h2>Pushing Stuff Around</h2>
+            <img src="/img/15wjgvr.gif" />
+          </section>
+
+          <section>
+            <h2>Default: Origin</h2>
+            <p>When you clone a repository, git will <br/>setup a default remote for you: origin</p>
+            <p>You can push to it like so:</p>
+            <p><code>git push -u origin master</code></p>
+            <p class="fragment">The <strong>-u</strong> tells git you'd like add it as a tracking reference</p>
+            <p class="fragment">Which helps when you want to pull stuff down later</p>
+          </section>
+
+          <section>
+            <h2>Grabbing Stuff</h2>
+            <p>It's pretty simple:</p>
+            <p><code>git pull &lt;remote name&gt; &lt;branch&gt;</code></p>
+            <br/><br/>
+            <p class="fragment">If you used the <strong>-u</strong> flag when pushing, <br/>you can just write <code>git pull</code></p>
+            <aside class="notes">
+              <p>the branch is the branch you want to pull from, you can specify multiple branches here. they will be merged into your current branch</p>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Careful!</h2>
+            <h3>Git auto-merges when you do a pull</h3>
+          </section>
+
+          <section>
+            <h2>Fetch & Merge</h2>
+            <p>Another way to accomplish a pull is to fetch and then merge:</p>
+            <p>
+              <code>git fetch origin</code><br/>
+              <code>git merge origin/master</code>
+            </p>
+            <p>This just gives you more control over what's happening.</p>
+          </section>
+
+          <section>
+            <h3>Remotes</h3>
+            <p>Because git is a <strong>distributed</strong> system, you can have multiple remotes that you can push to.</p>
+            <p>If you want to add one, use the following:</p>
+            <p><code>git remote add &lt;name&gt; &lt;url&gt;</code></p>
+          </section>
+
+          <section data-width="1024">
+            <h1>So?</h1>
+            <div class="fragment">
+              <p>Well, what if you want to keep your <br/>repository up-to-date with upstream?</p>
+              <p>You could try to pull-request everything<br/> into your own forked repo</p>
+            </div>
+
+          </section>
+
+          <section>
+            <p>Or you could just set up a remote to <br/>track all the other repositories:</p>
+            <p><code>git remote add upstream git@github.com:broadbandtv/Porcupine.git</code></p>
+
+            <br/><br/>
+            <div class="fragment">
+              <p>And then fetch and merge the right <br/>branch whenever you need to:</p>
+              <p>
+                <code>git fetch upstream</code><br/>
+                <code>git merge upstream/next</code>
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <!-- reverting work -->
+        <section>
+          <section>
+            <h1>Oh No!</h1>
+            <h2>You messed up your last commit!</h2>
+            <img class="fragment" src="/img/862859.gif" />
+          </section>
+
+          <section>
+            <h2>That's Okay!</h2>
+            <h3>We Have Magic On Our Side</h3>
+            <img src="/img/aMLcxFB.gif" />
+          </section>
+
+          <section>
+            <h2>Forgot some files?</h2>
+            <p>Add the missing files, and then run:</p>
+            <p><code>git commit --ammend</code></p>
+            <aside class="notes">
+              <p>If you don't add/remove files, this will let you edit the commit message</p>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Staged A File You Didn't Mean To?</h2>
+            <p>That's easy:</p>
+            <p><code>git reset HEAD path/to/file</code></p>
+          </section>
+
+          <section>
+            <h2>You Made A Bunch of Stupid Edits</h2>
+            <p>Rollback time!</p>
+            <p><code>git checkout -- path/to/file</code></p>
+            <img class="fragment" src="/img/0_6f0a6_b5082f50_orig.gif" />
+          </section>
+
+          <section>
+            <h2>Pushed A Change That You Shouldn't Have?</h2>
+            <div class="fragment">
+              <img src="/img/tumblr_mf4wi1Orti1rnvwt1.gif" />
+              <p>That's okay.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>You Can Fix It</h2>
+            <p>Use git's <em>revert</em>!</p>
+            <p><code>git revert HEAD</code></p>
+            <p class="fragment">That will create a patch that reverts the last commit, and commits that patch as a new commit</p>
+            <img class="fragment" src="/img/aMLcxFB.gif" />
+            <p class="fragment">You can also specify a specific commit to revert, instead of 'HEAD'</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Branching</h2>
+            <img class="fragment" src="/img/rs_498x226-131226100904-like_a_boss_gif_animated_lonely_island_likeaboss.gif" />
+            <p class="fragment">Branching let's you keep areas of work separate, so that you can be switch between things that you're doing</p>
+          </section>
+
+          <section>
+            <!-- creating branches -->
+            <h2>Creating Branches</h2>
+            <p>The easiest way to create a branch is the following:</p>
+            <p><code>git checkout -b &lt;new branch name&gt;</code></p>
+            <br/><br/>
+            <div class="fragment">
+              <p>This is shorthand for:</p>
+              <p><code>git branch &lt;new branch name&gt;</code></p>
+              <p><code>git checkout &lt;new branch name&gt;</code></p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Listing Branches</h2>
+            <p>Want to see what branches you've got available?</p>
+            <p><code>git branch</code></p>
+            <pre>
+              example
+              * master
+              testing
+              unicorns-and-rainbows
+            </pre>
+            <p class="fragment">The '*' lets you know what branch you're on right now.</p>
+            <div class="fragment">
+              <p>Add the <strong>-a</strong> flag to see ALL branches, even ones on remotes:</p>
+              <pre>
+                example
+                * master
+                testing
+                unicorns-and-rainbows
+                remotes/origin/master
+                remotes/origin/testing
+                remotes/origin/not-available-locally
+                remotes/origin/totally-awesome
+              </pre>
+            </div>
+          </section>
+
+          <section>
+            <h2>But I Want That Branch Here!</h2>
+            <p>So you've got a branch on one of your remotes.</p>
+            <p>But you want to work on that branch locally.</p>
+            <div class="fragment">
+              <p>
+                First, make sure you're up-to-date with that remote:<br/>
+                <code>git fetch &lt;remote name&gt;</code>
+              </p>
+            </div>
+
+            <div class="fragment">
+              <p>
+                Then, create a branch off of that:<br/>
+                <code>git checkout -b totally-awesome origin/totally-awesome</code>
+              </p>
+            </div>
+
+          </section>
+
+          <section>
+            <h2>Note</h2>
+            <p>When creating a tracking branch for something other than origin</p>
+            <p>it's a good idea to use a branch name that lets you know what</p>
+            <p>that branch tracks.</p>
+            <br/>
+            <p><code>git fetch upstream</code></p>
+            <p><code>git branch --track upstream-next upstream/next</code></p>
+          </section>
+
+          <section>
+            <!-- merging branches -->
+            <h2>Merging For Glory!</h2>
+            <img src="/img/KrbXv.gif" />
+            <p class="fragment">Merging lets you take one branch and combine it with another</p>
+          </section>
+
+          <section>
+            <h2>How?</h2>
+            <p>Say you want to merge the code from the branch 'next' into the branch 'master'.</p>
+            <div class="fragment">
+              <p>First make sure you're in the master branch.</p>
+              <p><code>git checkout master</code></p>
+            </div>
+            
+            <div class="fragment">
+              <p>Now, merge in the code from next.</p>
+              <p><code>git merge next</code></p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Keeping 'next' Up-to-date</h2>
+            <p>If you've forked your repository on GitHub, here's two ways to keep your version of the 'next' branch up-to-date.</p>
+            <div class="fragment">
+              <p><code>git checkout upstream-next</code></p>
+              <p><code>git pull</code></p>
+              <p><code>git checkout next</code></p>
+              <p><code>git merge upstream-next</code></p>
+            </div>
+            <br/>
+            <div class="fragment">
+              <p>Alternatively:</p>
+              <p><code>git pull upstream next</code></p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Conflict!</h2>
+            <img src="/img/sword-fighting-o.gif" />
+          </section>
+
+          <section>
+            <h2>Sometimes merging doesn't go well</h2>
+            <p>Occasionally when merging branches, you'll see something like the following:</p>
+            <pre>
+              > git pull upstream next
+              From git://git@github.com:broadbandtv/project-name
+              * branch            upstream     -> FETCH_HEAD
+              Auto-merging public/index.php
+              CONFLICT (content): Merge conflict in public/index.php
+              Automatic merge failed; fix conflicts and then commit the result.
+            </pre>
+
+            <p class="fragment">This means that Git was unable to merge the differences between your local copy of a file and the copy stored in the remote.</p>
+          </section>
+
+          <section>
+            <h2>Fix it!</h2>
+            <img src="img/1386421415_p6mm3g_vnwlhrc.gif" />
+
+            <div class="fragment">
+              <p>The first step is to find out what the differences are.</p> 
+              <p>You can open the files that have conflicts in them, and they will have inlined diffs that show you the differences between your local copy and the version you're trying to pull down.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Inline Diff?</h2>
+            <p>They're not pretty.</p>
+            <pre>
+              <<<<<<< HEAD:mergetest
+                      This is my third line
+                      =======
+                      This is a fourth line I am adding
+                      >>>>>>> 4e2b407f501b68f8588aa645acafffa0224b9b78:mergetest
+            </pre>
+
+            <p>This doesn't look too bad, but try to resolve a merge conflict that spans hundreds of lines.</p>
+
+            <aside class="notes">
+              <p><strong>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</strong>: Indicates the start of the lines that had a merge conflict. The first set of lines are the lines from the file that you were trying to merge the changes into.</p>
+              <p><strong>=======</strong>: Indicates the break point used for comparison. Breaks up changes that user has committed (above) to changes coming from merge (below) to visually see the differences.</p>
+              <p><strong>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</strong>: Indicates the end of the lines that had a merge conflict. Once you've chosen a block to keep, delete the other block ( including the conflict markers ), add the file. If you have any other files to resolve, fix them. Once you're done, commit the merge.</p>
+            </aside>
+          </section>
+
+          <section>
+            <h2>What About Tools?</h2>
+            <p><code>git mergetool</code> will launch a tool that <br/>will help resolve merge conflicts.</p>
+            <p>It can help you resolve crazy merge conflicts without going nuts.</p>
+            <img class="fragment" src="/img/Monitor Throwing.gif" />
+
+            <aside class="notes">
+              <p><code>git help mergetool</code> will bring up the manual page.</p>
+              <p>You can specify what tool you use to resolve the merge conflict, but that's out of the scope of this presentation.</p>
+            </aside>
+          </section>
+
+          <section>
+            <h2>Fix it quicker!</h2>
+            <p>However, if you just want to use your version or their version of the file, you can use one of the following commands:</p>
+            <pre>
+              $ git checkout --ours path/to/filename.ext   # checks out OUR copy of the file
+              $ git checkout --theirs path/to/filename.ext # checks out THEIR copy of the file
+              $ git add path/to/filename.ext
+              $ git commit
+            </pre>
+
+            <aside class="notes">
+              In this scenario, we checked out our copy of a file, then their copy and used that instead. This can be useful when two files are the same except your respective editors have changed the formatting of spaces/tabs/etc ( which shouldn't happen, but does ).
+            </aside>
+          </section>
+
+          <section>
+            <!-- deleting branches -->
+            <h2>Deleting Branches</h2>
+            <img src="/img/STOP.gif" />
+            <p class="fragment">Be careful when deleting branches! There is no way to recover a deleted branch!</p>
+          </section>
+
+          <section>
+            <h2>Delete All The Things</h2>
+            <img src="/img/hyperbole-clean-all-the-things.jpg" height="250"/>
+
+            <p><code>git branch -d &lt;branch name&gt;</code></p>
+            <div class="fragment">
+              <p>If the branch you're trying to delete hasn't been merged yet, git will throw up an error.</p>
+              <p>If you want to delete it anyways, use <strong>-D</strong> instead of <strong>-d</strong>.</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <h1>Time for some fun.</h1>
+          <div class="fragment">
+            <img src="/img/13.gif" />
+            <img src="/img/61.gif" />
+          </div>
+        </section>
+
+        <section>
+          <section>
+            <h1>Cherry Picking</h1>
+          </section>
+
+          <section>
+            <h2>What?</h2>
+            <img class="fragment" src="/img/cherrypicking.png" />
+          </section>
+
+          <section>
+            <h2>No.</h2>
+            <p>Cherry picking is taking a commit ( or a range of commits ) from another branch and bringing them over to your current one.</p>
+            <p class="fragment">It's similar to merging, but with much more fine-grained control.</p>
+          </section>
+
+          <section>
+            <h2>Tell me how</h2>
+            <p>First, use <code>git log</code> or GitHub to find the first 6 or 7 characters of the commit you want to cherry pick.</p>
+            <pre>
+commit 851a061f353976dd37d11fe6e6d2ec21ccce8234
+Author: Sean Patrick Hagen 
+Date:   Thu Feb 20 18:47:06 2014 -0800
+</pre>
+            <div class="fragment">
+              <p>Then switch to the branch you want to insert the commit into:</p>
+              <p><code>git checkout my-awesome-feature</code></p>
+            </div>
+            <div class="fragment">
+              <p>Now <code>cherry-pick</code> the commit you want:</p>
+              <p><code>git cherry-pick 851a061f</code></p>
+            </div>
+          </section>
+
+          <section>
+            <h2>That's it!</h2>
+            <p>This can be useful when you want to grab a bugfix from another branch, or when you've got a few commits you want to merge but don't want to actually do a full merge.</p>
+          </section>
+
+        </section>
+
+        <section>
+          <section>
+            <h1>Bisecting</h1>
+          </section>
+
+          <section>
+            <h4>Couldn't Find A Funny Image</h4>
+            <img src="/img/sMNudhu.gif" />
+            <h6>So Have James Baxter On A Ball</h6>
+          </section>
+
+          <section>
+            <h2>What is it?</h2>
+            <h4>And Why Should I Care?</h4>
+
+            <p><code>git bisect</code> helps you find a bad commit between any two commits.</p>
+          </section>
+
+          <section>
+            <h3>I know that doesn't sound awesome</h3>
+            <h2>But hold on.</h2>
+          </section>
+
+          <section>
+            <h2>How To Run It</h2>
+            <p>You can run <code>git bisect</code> manually or automatically.</p>
+          </section>
+
+          <section>
+            <h2>Running It Manually</h2>
+            <p>First, start up the bisecting process:</p>
+            <p><code>git bisect start</code></p>
+
+            <div class="fragment">
+              <p>Then, tell give it a commit to start with.</p>
+              <p>And tell it if that commit is good or bad.</p>
+              <p><code>git bisect good a09c834f</code></p>
+            </div>
+
+            <br/>
+
+            <div class="fragment">
+              <p>Now give it the other end of the range you want to test out.</p>
+              <p><code>git bisect bad b38d80adf</code></p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Okay, Now What</h2>
+            <p>Now <code>git</code> will start a binary search for you!</p>
+            <p><code>git</code> will load up a revision and ask you if the commit is good or bad.</p>
+            <p>You answer with "<code>git bisect good</code>" or "<code>git bisect bad</code>".</p>
+          </section>
+
+          <section>
+            <h2>Pretty Awesome</h2>
+            <h3>But You Said Something About Automated Bisecting?</h3>
+            <br/><br/>
+            <h1 class="fragment">I did!</h1>
+          </section>
+
+          <section>
+            <h2>Automated Bisecting</h2>
+            <h3>Throw Robots Into The Mix!</h3>
+
+            <p>To automate the process is pretty similar to how you do it manually.</p>
+            <p>Use <code>git bisect start</code> to start,</p>
+            <p>Then <code>git bisect good &lt;commit hash&gt;</code> and <code>git bisect bad &lt;commit hash&gt;</code> to give it a range</p>
+          </section>
+
+          <section>
+            <h2>Atomic Turbines To Full!</h2>
+            <p><code>git bisect run &lt;command&gt;</code></p>
+            <br/>
+            <p>Now you're off to the races. <code>git</code> will use that command on every commit, and will let you know when it finds the offending commit.</p>
+            <p class="fragment">So if you've got a bunch of commits</p>
+            <p class="fragment">and you know one of them is breaking a particular unit test</p>
+            <p class="fragment">give <code>git bisect run</code> the command to run the unit test</p>
+          </section>
+
+          <section>
+            <h1>OMG</h1>
+            <img src="/img/6a00d834a16dcf69e2019b02177600970d-800wi.gif" />
+          </section>
+
+          <section>
+            <h2>Warning</h2>
+            <h6><small>Atomic Turbines Need Proper Care And Maintenance</small></h6>
+
+            <p>When you give <code>git bisect run</code> a command to run, that command has to follow the Unix tradition for exit codes</p>
+            <p>It needs to return a 0 if it passes, and a non-zero exit code if it fails.</p>
+          </section>
+
+        </section>
+
+        <section>
+          <section>
+            <h1>Blaming</h1>
+            <h3>For Fun And Profit</h3>
+          </section>
+
+          <section>
+            <h2>What?</h2>
+
+            <aside class="notes">
+              <p>Okay, now that you know how to track down what commit broke the build, what about when you already know what file is causing an issue, and you want to track down who's responsible?</p>
+            </aside>
+          </section>
+
+          <section>
+            <h3>Duh.</h3>
+            <img src="/img/keep-calm-and-blame-someone-else-1.png" height="350"/>
+          </section>
+          
+          <section>
+            <h3>Git Blame?</h3>
+            <p><code>git blame</code> lets you see which commit belongs to the last time a line in a file was changed.</p>
+
+            <pre>
+5099d201 Identity.php      (Lewis Zimmerman   2014-02-05 14:25:40 -0800 20) public function setId($id)
+5099d201 Identity.php      (Lewis Zimmerman   2014-02-05 14:25:40 -0800 21) {
+4ef3d169 Identity.php      (Lewis Zimmerman   2014-02-05 15:10:44 -0800 22)    $this->id = (int) $id;
+ee5d5900 IdentityModel.php (Anthony Chernikov 2014-02-11 14:48:51 -0800 23) 
+5099d201 Identity.php      (Lewis Zimmerman   2014-02-05 14:25:40 -0800 24)    return $this;
+            </pre>
+          </section>
+
+          <section>
+            <h2>Use With Caution</h2>
+            <h4>Or Don't</h4>
+
+            <p>Check out <code>git help blame</code> to see some of the options, and check out <a href="http://git-scm.com/book/en/Git-Tools-Debugging-with-Git">the Git Book</a> for more.</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Stashing</h1>
+          </section>
+
+          <section>
+            <h2>Again, What?</h2>
+            <img src="/img/ku-xlarge.gif" class="fragment"/>
+          </section>
+
+          <section>
+            <h2>Actually, That's Pretty Close</h2>
+            <h4>Not The Dog Part Though</h4>
+            <h6><small>That'd Just Be Silly</small></h6>
+          </section>
+
+          <section>
+            <h2>What is Stashing?</h2>
+            <p>Stashing is similar to a commit, but without the commitment.</p>
+            <p class="fragment">It lets you store your work so you can switch branches, without having to make a commit</p>
+          </section>
+
+          <section>
+            <h3>An Example</h3>
+            <p>Say you've been working on some code:</p>
+            <pre>
 $ git status
-# On branch feature-optimize-library-search
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#      modified:   index.html
+            </pre>
+
+            <p>And you want to switch to another branch to quickly fix a bug.</p>
+          </section>
+
+          <section>
+            <h3>Stash Yo Stuff</h3>
+            <p>Use <code>git stash</code>:</p>
+            <pre>
+$ git stash
+Saved working directory and index state \
+  "WIP on master: 049d078 added the index file"
+HEAD is now at 049d078 added the index file
+(To restore them type "git stash apply")
+            </pre>
+          </section>
+
+          <section>
+            <h3>Clean!</h3>
+            <p>Now your working directory is clean!</p>
+            <pre>
+$ git status
+# On branch master
+nothing to commit (working directory clean)
+            </pre>
+          </section>
+
+          <section>
+            <h3>Getting It Back</h3>
+            <p>Now you've done everything you needed to, and you want to get back to where you were:</p>
+            <pre>
+$ git stash apply
+# On branch master
 # Changes not staged for commit:
 #   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
 #
-#       modified:   application/configs/application.ini
-#       modified:   application/index.php
-#       modified:   application/routers/example.php
-#
-no changes added to commit (use "git add" and/or "git commit -a")
-</pre>                    
-                  </section>
+#      modified:   index.html
+            </pre>
+          </section>
 
-                  <!-- adding files -->
-                  <section>
-                    <h2>Adding Files</h2>
-                    <p>This tells git about a new file, or lets it know about changes in a file.</p>
-                    <p><code>git add path/to/file</code></p>
-                    <p class="fragment">Technically, you're actually "staging" content for your next commit</p>
-                    <div class="fragment">
-                      <p>Here are a few useful flags for when you're adding files:</p>
-                      <ul>
-                        <li class="fragment">--force</li>
-                        <li class="fragment">-A, --all</li>
-                      </ul>
-                      <p class="fragment">
-                        <img src="/img/Everything-Changed-castor-from-tron-legacy-20038660-500-211.gif" />
-                      </p>
-                    </div>
-                    
-                    <aside class="notes">
-                      <ul>
-                        <li><strong>--force</strong>: allows you to add a file that would otherwise be ignored, eg, if you were ignoring a path in your .gitignore ( more later ), you could add a file anyways</li>
-                        <li><strong>-A, --all</strong>:add new files as well as staging modified content</li>
-                      </ul>
-                    </aside>
-                  </section>
+          <section>
+            <h3>Stash Multiple Things?</h3>
+            <p>You can keep making changes and stashing them.</p>
+            <p>If you want to see what you've got stashed, use <code>git stash list</code>:</p>
+            <pre>
+$ git stash list
+stash@{0}: WIP on master: 049d078 added the index file
+stash@{1}: WIP on master: c264051... Revert "added file_size"
+stash@{2}: WIP on master: 21d80a5... added number to log
+            </pre>
+          </section>
+        </section>
 
-                  <!-- removing files -->
-                  <section>
-                    <h2>Removing Files</h2>
-                    <p>Tell git you don't want it to track it anymore,<br/> and to remove it from the working tree</p>
-                    <p><code>git rm path/to/file</code></p>
-                    <img src="/img/epicgarbageshot1.gif" />
-                  </section>
+        <section>
+          <section>
+            <h1>GitHub!</h1>
+            <img src="/img/adventure-cat.png" height="350"/>
+          </section>
 
-                  <section>
-                    <h2>Seeing What's Changed</h2>
-                    <p>Once you've changed a file, sometimes you want to know what's changed before you commit it</p>
-                    <p><code>git diff path/to/file</code></p>
-                    <div class="fragment">
-                      <pre>
-$ git diff application/routers/example.php
-diff --git a/application/routers/example.php b/application/routers/example.php
-index 7897b19..a948510 100644
---- a/application/routers/example.php
-+++ b/application/routers/example.php
-@@ -181,7 +181,7 @@ $app->delete( '/api/video/:videoid',
-     $getUserObject,
-     $checkVideoOwner,
--    function( $videoid ) use ( $app, $env ) {
-+    function( $videoid ) use ( $app, $env, $acl ) {
-                      </pre>
-                    </div>
-                  </section>
+          <section>
+            <h2>What is this "GitHub" you speak of?</h2>
+            <p>GitHub is where we keep all of our code. GitHub is just another remote that you can use, and we use it because it gives us some pretty awesome features.</p>
+          </section>
 
-                  <!-- committing changes -->
-                  <section>
-                    <h2>Commit Them Changes!</h2>
-                    <p>Now that you've added some files, time to store those changes!</p>
-                    <p><code>git commit</code></p>
-                    <div class="fragment">
-                      <p>Useful options:</p>
-                      <ul>
-                        <li>-a, --all</li>
-                      </ul>
-                    </div>
+          <section>
+            <h1>Like What?</h1>
+            
+            <ul>
+              <li><h3 class="fragment">Forking</h3></li>
+              <li><h3 class="fragment">Pull Requests</h3></li>
+            </ul>
+          </section>
 
-                    <aside class="notes">
-                      <ul>
-                        <li><strong>-a, --all</strong>: automatically stage files that have been modified and deleted, but not new files</li>
-                        <li>
-                      </ul>
-                    </aside>
-                  </section>
+          <section>
+            <h2>Forking?</h2>
+            <h5>Sounds Dirty</h5>
 
-                  <section>
-                    <h2>Be Awesome</h2>
-                    <h3>Write Good Commit Messages</h3>
+            <p class="fragment">Forking just creates a copy of a repository in your account.</p>
+            <p class="fragment">This lets you work on code and get as messy as you like.</p>
+            <p class="fragment">But keeps the main repo in a pretty usable state for QA</p>
+            <p class="fragment"><small>Most of the time</small></p>
 
-                    <p>When you use commit, git will bring up an editor <br/>for you to use to write a commit message.</p>
-                    <p>Be awesome to your coworkers, and write a good description.</p>
-                    <p>It should follow the following format:</p>
+          </section>
 
-<pre>
-Maximum 80 character brief description
- 
-In-depth list of modifications made to each file in the commit.
-</pre>
-                  </section>
+          <section>
+            <h2>How Does I Fork?</h2>
+            <img src="/img/forking.jpg" />
 
-                  <section>
-                    <h2>Why?</h2>
-                    <h4 class="fragment">Because I Said So</h4>
+            <p>This image is probably already out of date.</p>
+            <p>GitHub is super agile, so their page tends to change without warning.</p>
+            <p>Just look for a button that says "Fork"</p>
+          </section>
 
-                    <div class="fragment">
-                      <p>Actually, it's because the git log ( and GitHub ) use the first 80 characters as a sort of title</p>
-                      <img src="/img/git-commit-too-long.jpg" />
-                      <img src="/img/git-commit-too-long-2.jpg" />
-                    </div>
-                  </section>
+          <section>
+            <h2>Requesting That You Pull</h2>
+            <img src="/img/keep-calm-and-send-a-pull-request.gif" />
+            <h3>What Are Pull Requests?</h3>
+          </section>
 
-                  <!-- pushing those changes -->
-                  <section>
-                    <h2>Pushing Stuff Around</h2>
-                    <img src="/img/15wjgvr.gif" />
-                  </section>
+          <section>
+            <h2>Return To Sender</h2>
+            <p>Pull Requests are how you get code from your forked repo back into the main repository.</p>
+          </section>
 
-                  <section>
-                    <h2>Default: Origin</h2>
-                    <p>When you clone a repository, git will <br/>setup a default remote for you: origin</p>
-                    <p>You can push to it like so:</p>
-                    <p><code>git push -u origin master</code></p>
-                    <p class="fragment">The <strong>-u</strong> tells git you'd like add it as a tracking reference</p>
-                    <p class="fragment">Which helps when you want to pull stuff down later</p>
-                  </section>
+          <section>
+            <p>Click one of the two green buttons to start the pull request.</p>
+          </section>
 
-                  <section>
-                    <h2>Grabbing Stuff</h2>
-                    <p>The act of downloading the changesets from a repository is called 'pulling'</p>
-                    <p>It's pretty simple:</p>
-                    <p><code>git pull &lt;remote name&gt; &lt;branch&gt;</code></p>
-                    <br/><br/>
-                    <p class="fragment">If you used the <strong>-u</strong> flag when pushing, <br/>you can just write <code>git pull</code></p>
-                  </section>
+          <section>
+            <p>Next you'll see a screen with this at the top:</p>
 
-                  <section>
-                    <h2>Careful!</h2>
-                    <h3>Git auto-merges when you do a pull</h3>
-                  </section>
+            <p>And then a list of your commits.</p>
+            <aside class="notes">
+              <p>Those two pink arrows are pointing at the two repositories ( and branches ) that GitHub is comparing. The one on the left is where the PR is going, the one on the right is where it's coming from.</p>
 
-                  <section>
-                    <h2>Fetch & Merge</h2>
-                    <p>Another way to accomplish a pull is to fetch and then merge:</p>
-                    <p>
-                      <code>git fetch origin</code><br/>
-                      <code>git merge origin/master</code>
-                    </p>
-                    <p>This just gives you more control over what's happening.</p>
-                  </section>
+              <p>Always PR into the proper branch for your feature/task/bug!</p>
+            </aside>
+          </section>
 
-                  <section>
-                    <h3>Remotes</h3>
-                    <p>Because git is a <strong>distributed</strong> system, you can have multiple remotes that you can push to.</p>
-                    <p>If you want to add one, use the following:</p>
-                    <p><code>git remote add &lt;name&gt; &lt;url&gt;</code></p>
-                  </section>
+          <section>
+            <p>If you click on edit, you'll see something like this:</p>
+            <p>This lets you change what branch you're PR-ing from, and to.</p>
+          </section>
 
-                  <section data-width="1024">
-                    <h1>So?</h1>
-                    <div class="fragment">
-                      <p>Well, what if you want to keep your <br/>repository up-to-date with multiple remotes?</p>
-                      <p>You could try to pull-request everything<br/> into your own forked repo</p>
-                    </div>
+          <section>
+            <h1>Do's & Don'ts</h1>
+          </section>
 
-                  </section>
+          <section>
+            <h2>Don't!</h2>
+            <ul>
+              <li class="fragment">PR into next or master.</li>
+              <li class="fragment">Create huge PRs.</li>
+              <li class="fragment">Add more commits to an open<br/> PR after you've created it</li>
+            </ul>
+          </section>
 
-                  <section>
-                    <p>Or you could just set up a remote to <br/>track all the other repositories:</p>
-                    <p><code>git remote add upstream git@github.com:broadbandtv/Porcupine.git</code></p>
+          <section>
+            <h2>DO!</h2>
+            <ul>
+              <li class="fragment">Give your PR a good name!</li>
+              <li class="fragment">Let your team know there's a PR to review</li>
+              <li class="fragment">Keep your PR's small</li>
+              <li class="fragment">Use the description to explain what the PR is for</li>
+              <li class="fragment">Do a local merge before doing the PR</li>
+              <li class="fragment">Bug your team to get your PR reviewed</li>
+            </ul>
+          </section>
 
-                    <br/><br/>
-                    <div class="fragment">
-                      <p>And then fetch and merge the right <br/>branch whenever you need to:</p>
-                      <p>
-                        <code>git fetch upstream</code><br/>
-                        <code>git merge upstream/next</code>
-                      </p>
-                    </div>
-                  </section>
-                </section>
+          <section>
+            <h1>Tips & Tricks</h1>
+          </section>
 
-                <!-- reverting work -->
-                <section>
-                  <section>
-                    <h1>Oh No!</h1>
-                    <h2>You messed up your last commit!</h2>
-                    <img class="fragment" src="/img/862859.gif" />
-                  </section>
+          <section>
+            <ul>
+              <li class="fragment">You can use 'blame' in GitHub</li>
+              <li class="fragment">Add <strong>?w=1</strong> to any diff URL to ignore whitespace</li>
+              <li class="fragment">Add <strong>.diff</strong> or <strong>.patch</strong> to compare view page, pull request, or commit page URLs</li>
+              <li class="fragment">You can reply to notification emails instead of going to GitHub</li>
+              <li class="fragment">You can PR from branch to branch</li>
+              
+            </ul>
+          </section>
 
-                  <section>
-                    <h2>That's Okay!</h2>
-                    <h3>We Have Magic On Our Side</h3>
-                    <img src="/img/aMLcxFB.gif" />
-                  </section>
+          <section>
+            <h1>That's All Folks</h1>
+            <ul>
+              <li>http://zachholman.com/talk/git-github-secrets/</li>
+              <li>http://git-scm.com/book/</li>
+            </ul>
+          </section>
 
-                  <section>
-                    <h2>Forgot some files?</h2>
-                    <p>Add the missing files, and then run:</p>
-                    <p><code>git commit --ammend</code></p>
-                    <aside class="notes">
-                      <p>If you don't add/remove files, this will let you edit the commit message</p>
-                    </aside>
-                  </section>
-
-                  <section>
-                    <h2>Staged A File You Didn't Mean To?</h2>
-                    <p>That's easy:</p>
-                    <p><code>git reset HEAD path/to/file</code></p>
-                  </section>
-
-                  <section>
-                    <h2>You Made A Bunch of Stupid Edits</h2>
-                    <p>Rollback time!</p>
-                    <p><code>git checkout -- path/to/file</code></p>
-                    <img class="fragment" src="/img/0_6f0a6_b5082f50_orig.gif" />
-                  </section>
-
-                  <section>
-                    <h2>Pushed A Change That You Shouldn't Have?</h2>
-                    <div class="fragment">
-                      <img src="/img/tumblr_mf4wi1Orti1rnvwt1.gif" />
-                      <p>That's okay.</p>
-                    </div>
-                  </section>
-
-                  <section>
-                    <h2>You Can Fix It</h2>
-                    <p>Use git's <em>revert</em>!</p>
-                    <p><code>git revert HEAD</code></p>
-                    <p class="fragment">That will create a patch that reverts the last commit, and commits that patch as a new commit</p>
-                    <img class="fragment" src="/img/aMLcxFB.gif" />
-                    <p class="fragment">You can also specify a specific commit to revert, instead of 'HEAD'</p>
-                  </section>
-                </section>
-
-                <section>
-                  <section>
-                    <h2>Branching</h2>
-                    <img class="fragment" src="/img/rs_498x226-131226100904-like_a_boss_gif_animated_lonely_island_likeaboss.gif" />
-                    <p class="fragment">Branching let's you keep areas of work separate, so that you can be switch between things that you're doing</p>
-                  </section>
-
-                  <section>
-                    <!-- creating branches -->
-                    <h2>Creating Branches</h2>
-                    <p>The easiest way to create a branch is the following:</p>
-                    <p><code>git checkout -b &lt;new branch name&gt;</code></p>
-                    <br/><br/>
-                    <div class="fragment">
-                      <p>This is shorthand for:</p>
-                      <p><code>git branch &lt;new branch name&gt;</code></p>
-                      <p><code>git checkout &lt;new branch name&gt;</code></p>
-                    </div>
-                  </section>
-
-                  <section>
-                    <!-- switching branches -->
-                    <h2>Switching Branches</h2>
-                    <p><code>git checkout &lt;branch name&gt;</code></p>
-                    <p class="fragment">Simple, no?</p>
-                  </section>
-
-                  <section>
-                    <h2>Listing Branches</h2>
-                    <p>Want to see what branches you've got available?</p>
-                    <p><code>git branch</code></p>
-                    <pre>
-  example
-* master
-  testing
-  unicorns-and-rainbows
-                    </pre>
-                    <p class="fragment">The '*' lets you know what branch you're on right now.</p>
-                    <div class="fragment">
-                      <p>Add the <strong>-a</strong> flag to see ALL branches, even ones on remotes:</p>
-                      <pre>
-  example
-* master
-  testing
-  unicorns-and-rainbows
-  remotes/origin/master
-  remotes/origin/testing
-  remotes/origin/not-available-locally
-  remotes/origin/totally-awesome
-                      </pre>
-                    </div>
-                  </section>
-
-                  <section>
-                    <h2>But I Want That Branch Here!</h2>
-                    <p>So you've got a branch on one of your remotes.</p>
-                    <p>But you want to work on that branch locally.</p>
-                    <div class="fragment">
-                      <p>
-                        First, make sure you're up-to-date with that remote:<br/>
-                        <code>git fetch &lt;remote name&gt;</code>
-                      </p>
-                    </div>
-
-                    <div class="fragment">
-                      <p>
-                        Then, create a branch off of that:<br/>
-                        <code>git checkout -b origin-totally-awesome origin/totally-awesome</code>
-                      </p>
-                    </div>
-                  </section>
-
-                  <section>
-                    <!-- merging branches -->
-                    <h2>Merging For Glory!</h2>
-                    <img src="/img/KrbXv.gif" />
-                    <p class="fragment">Merging lets you take one branch and combine it with another</p>
-                  </section>
-
-                  <section>
-                    <h2>How?</h2>
-                    <p>Say you want to merge the code from the branch 'next' into the branch 'master'.</p>
-                    <div class="fragment">
-                      <p>First make sure you're in the master branch.</p>
-                      <p><code>git checkout master</code></p>
-                    </div>
-                    
-                    <div class="fragment">
-                      <p>Now, merge in the code from next.</p>
-                      <p><code>git merge next</code></p>
-                    </div>
-                  </section>
-
-                  <section>
-                    <h2>Conflict!</h2>
-                    <img src="/img/sword-fighting-o.gif" />
-                  </section>
-
-                  <section>
-                    <h2>Sometimes merging doesn't go well</h2>
-                    <p>Occasionally when merging branches, you'll see something like the following:</p>
-                    <pre>
-> git pull upstream next
-From git://git@github.com:broadbandtv/project-name
- * branch            upstream     -> FETCH_HEAD
-Auto-merging public/index.php
-CONFLICT (content): Merge conflict in public/index.php
-Automatic merge failed; fix conflicts and then commit the result.
-                    </pre>
-
-                    <p class="fragment">This means that Git was unable to merge the differences between your local copy of a file and the copy stored in the remote.</p>
-                  </section>
-
-                  <section>
-                    <h2>Fix it!</h2>
-                    <img src="img/1386421415_p6mm3g_vnwlhrc.gif" />
-
-                    <div class="fragment">
-                      <p>The first step is to find out what the differences are.</p> 
-                      <p>You can open the files that have conflicts in them, and they will have inlined diffs that show you the differences between your local copy and the version you're trying to pull down.</p>
-                    </div>
-                  </section>
-
-                  <section>
-                    <h2>Inline Diff?</h2>
-                    <p>They're not pretty.</p>
-                    <pre>
-<<<<<<< HEAD:mergetest
- This is my third line
-=======
- This is a fourth line I am adding
->>>>>>> 4e2b407f501b68f8588aa645acafffa0224b9b78:mergetest
-                    </pre>
-
-                    <p>This doesn't look too bad, but try to resolve a merge conflict that spans hundreds of lines.</p>
-
-                    <aside class="notes">
-                    <p><strong>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</strong>: Indicates the start of the lines that had a merge conflict. The first set of lines are the lines from the file that you were trying to merge the changes into.</p>
-                    <p><strong>=======</strong>: Indicates the break point used for comparison. Breaks up changes that user has committed (above) to changes coming from merge (below) to visually see the differences.</p>
-                    <p><strong>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</strong>: Indicates the end of the lines that had a merge conflict. Once you've chosen a block to keep, delete the other block ( including the conflict markers ), add the file. If you have any other files to resolve, fix them. Once you're done, commit the merge.</p>
-                    </aside>
-                  </section>
-
-                  <section>
-                    <h2>What About Tools?</h2>
-                    <p><code>git mergetool</code> will launch a tool that <br/>will help resolve merge conflicts.</p>
-                    <p>It can help you resolve crazy merge conflicts without going nuts.</p>
-                    <img class="fragment" src="/img/Monitor Throwing.gif" />
-
-                    <aside class="notes">
-                      <p><code>git help mergetool</code> will bring up the manual page.</p>
-                      <p>You can specify what tool you use to resolve the merge conflict, but that's out of the scope of this presentation.</p>
-                    </aside>
-                  </section>
-
-                  <section>
-                    <h2>Fix it quicker!</h2>
-                    <p>However, if you just want to use your version or their version of the file, you can use one of the following commands:</p>
-                    <pre>
-$ git checkout --ours path/to/filename.ext   # checks out OUR copy of the file
-$ git checkout --theirs path/to/filename.ext # checks out THEIR copy of the file
-$ git add path/to/filename.ext
-$ git commit
-                    </pre>
-
-                    <aside class="notes">
-                      In this scenario, we checked out our copy of a file, then their copy and used that instead. This can be useful when two files are the same except your respective editors have changed the formatting of spaces/tabs/etc ( which shouldn't happen, but does ).
-                    </aside>
-                  </section>
-
-                  <section>
-                    <!-- deleting branches -->
-                    <h2>Deleting Branches</h2>
-                    <img src="/img/STOP.gif" />
-                    <p class="fragment">Be careful when deleting branches! There is no way to recover a deleted branch!</p>
-                  </section>
-
-                  <section>
-                    <h2>Delete All The Things</h2>
-                    <img src="/img/hyperbole-clean-all-the-things.jpg" height="250"/>
-
-                    <p><code>git branch -d &lt;branch name&gt;</code></p>
-                    <div class="fragment">
-                      <p>If the branch you're trying to delete hasn't been merged yet, git will throw up an error.</p>
-                      <p>If you want to delete it anyways, use <strong>-D</strong> instead of <strong>-d</strong>.</p>
-                    </div>
-                  </section>
-                </section>
-
-                <section>
-                  <h1>Time for some fun.</h1>
-                  <div class="fragment">
-                    <img src="/img/13.gif" />
-                    <img src="/img/61.gif" />
-                  </div>
-                </section>
-
-                <section>
-                  <section>
-                    <h1>Cherry Picking</h1>
-                  </section>
-
-                </section>
-
-                <section>
-                  <section>
-                    <h1>Bisecting</h1>
-                  </section>
-                </section>
-
-                <section>
-                  <section>
-                    <h1>Blaming For Fun And Profit</h1>
-                  </section>
-                </section>
-
-                <section>
-                  <section>
-                    <h1>Stashing</h1>
-                  </section>
-                </section>
+        </section>
 
 			</div>
 
@@ -647,27 +1053,28 @@ $ git commit
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+      width: 1324,
+      
+			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+			// Parallax scrolling
+			// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+			// parallaxBackgroundSize: '2100px 900px',
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			]
 			});
 
 		</script>
