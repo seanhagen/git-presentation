@@ -214,7 +214,7 @@
               #       modified:   application/routers/example.php
               #
               no changes added to commit (use "git add" and/or "git commit -a")
-            </pre>                    
+            </pre>
           </section>
 
           <!-- adding files -->
@@ -233,7 +233,7 @@
                 <img src="/img/Everything-Changed-castor-from-tron-legacy-20038660-500-211.gif" />
               </p>
             </div>
-            
+
             <aside class="notes">
               <ul>
                 <li><strong>--force</strong>: allows you to add a file that would otherwise be ignored, eg, if you were ignoring a path in your .gitignore ( more later ), you could add a file anyways</li>
@@ -300,7 +300,7 @@
 
             <pre>
               Maximum 80 character brief description
-              
+
               In-depth list of modifications made to each file in the commit.
             </pre>
           </section>
@@ -536,7 +536,7 @@
               <p>First make sure you're in the master branch.</p>
               <p><code>git checkout master</code></p>
             </div>
-            
+
             <div class="fragment">
               <p>Now, merge in the code from next.</p>
               <p><code>git merge next</code></p>
@@ -584,7 +584,7 @@
             <img src="img/1386421415_p6mm3g_vnwlhrc.gif" />
 
             <div class="fragment">
-              <p>The first step is to find out what the differences are.</p> 
+              <p>The first step is to find out what the differences are.</p>
               <p>You can open the files that have conflicts in them, and they will have inlined diffs that show you the differences between your local copy and the version you're trying to pull down.</p>
             </div>
           </section>
@@ -656,6 +656,106 @@
         </section>
 
         <section>
+          <section>
+            <h1>Rebasing</h1>
+            <div class="fragment">
+              <p>Rewriting history</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Warning</h2>
+            <h3 class="fragment">This is dangerous</h3>
+            <h4 class="fragment">And sometimes hard to understand</h4>
+            <h5 class="fragment">For me, anyways</h5>
+          </section>
+
+          <section>
+            <h2>So what is it?</h2>
+            <p class="fragment">Rebasing re-writes the commit history.</p>
+            <p class="fragment">This can be dangerous</p>
+          </section>
+
+          <section>
+            <h2>Dangerous?</h2>
+            <p class="fragment">Well, not so much dangerous as supremely annoying to deal with</p>
+            <p class="fragment">More detail later on</p>
+          </section>
+
+          <section>
+            <h2>So how does one rebase?</h2>
+            <p class="fragment">First step is to make sure you've got all the latest code</p>
+            <pre class="fragment">
+              $ git remote update --prune
+            </pre>
+
+            <p class="fragment">The <code>remote update</code> tells git to grab all the branches from all remotes that it knows about</p>
+
+            <p class="fragment">The <code>--prune</code> bit tells it to delete refercnes to branches that have been deleted upstream so they don't clutter up <code>git branch -a</code></p>
+          </section>
+
+          <section>
+            <h2>Second step</h2>
+            <p class="fragment">The next step actually performs the rebase</p>
+            <pre class="fragment">
+              $ git rebase upstream/master
+            </pre>
+            <p class="fragment">This will perform the rebase itself.</p>
+          </section>
+
+          <section>
+            <h2>And this is where things get complicated</h2>
+            <p class="fragment">This is what a git tree looks like before rebasing</p>
+            <pre class="fragment">
+                A---B---C topic
+               /
+          D---E---F---G master
+            </pre>
+          </section>
+
+          <section>
+            <h2>And after</h2>
+            <pre class="fragment">
+                            A'--B'--C' topic
+                           /
+              D---E---F---G master
+            </pre>
+
+            <p class="fragment">This is the core of what rebasing does</p>
+
+            <p class="fragment">It basically replays all of the commits on to the current branch, changing the point at which the branch was.... well, branched</p>
+          </section>
+
+          <section>
+            <h2>Back to the danger</h2>
+
+            <p>This is where the danger comes in.</p>
+            <p class="fragment">If you rebase and push up a branch that other people have used, you can cause serious conflicts.</p>
+            <p class="fragment">The basic rule of thumb is thus: only rebase your branch before you push it up.</p>
+          </section>
+
+          <section>
+            <h2>What happens when something goes wrong?</h2>
+            <p class="fragment">If something goes wrong during the rebase, just do the following</p>
+            <ul>
+              <li class="fragment">Fix the conflict</li>
+              <li class="fragment">Use <code>git rebase --continue</code></li>
+              <li class="fragment">Repeat until done!</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>What happens when something goes <b>REALLY</b> wrong?</h2>
+            <p class="fragment">Sometimes a rebase will just not be fixable</p>
+            <p class="fragment">Sometimes you've just got to cut and run</p>
+            <pre class="fragment">
+              $ git rebase --abort
+            </pre>
+            <p class="fragment">At this point, maybe just go with a plain merge.</p>
+          </section>
+        </section>
+
+        <section>
           <h1>Time for some fun.</h1>
           <div class="fragment">
             <img src="/img/13.gif" />
@@ -688,7 +788,7 @@
               <p>Next,use <code>git log</code> or GitHub to find the first 6 or 7 characters of the commit you want to cherry pick.</p>
               <pre>
 commit 851a061f353976dd37d11fe6e6d2ec21ccce8234
-Author: Sean Patrick Hagen 
+Author: Sean Patrick Hagen
 Date:   Thu Feb 20 18:47:06 2014 -0800
               </pre>
             </div>
@@ -822,7 +922,7 @@ Date:   Thu Feb 20 18:47:06 2014 -0800
             <h3>Duh.</h3>
             <img src="/img/keep-calm-and-blame-someone-else-1.png" height="350"/>
           </section>
-          
+
           <section>
             <h3>Git Blame?</h3>
             <p><code>git blame</code> lets you see which commit belongs to the last time a line in a file was changed.</p>
@@ -831,7 +931,7 @@ Date:   Thu Feb 20 18:47:06 2014 -0800
 5099d201 Identity.php      (Lewis Zimmerman   2014-02-05 14:25:40 -0800 20) public function setId($id)
 5099d201 Identity.php      (Lewis Zimmerman   2014-02-05 14:25:40 -0800 21) {
 4ef3d169 Identity.php      (Lewis Zimmerman   2014-02-05 15:10:44 -0800 22)    $this->id = (int) $id;
-ee5d5900 IdentityModel.php (Anthony Chernikov 2014-02-11 14:48:51 -0800 23) 
+ee5d5900 IdentityModel.php (Anthony Chernikov 2014-02-11 14:48:51 -0800 23)
 5099d201 Identity.php      (Lewis Zimmerman   2014-02-05 14:25:40 -0800 24)    return $this;
             </pre>
           </section>
@@ -942,7 +1042,7 @@ stash@{2}: WIP on master: 21d80a5... added number to log
 
           <section>
             <h1>Like What?</h1>
-            
+
             <ul>
               <li><h3 class="fragment">Forking</h3></li>
               <li><h3 class="fragment">Pull Requests</h3></li>
@@ -1002,29 +1102,31 @@ stash@{2}: WIP on master: 21d80a5... added number to log
             <img src="/img/pr-3.jpg" />
             <p>This lets you change what branch you're PR-ing from, and to.</p>
           </section>
-
+        </section>
+        <section>
           <section>
             <h1>Do's & Don'ts</h1>
+            <p class="fragment">These are opinions</p>
+            <p class="fragment">....mostly</p>
           </section>
 
           <section>
             <h2>Don't!</h2>
             <ul>
-              <li class="fragment">PR into next or master.</li>
-              <li class="fragment">Create huge PRs.</li>
-              <li class="fragment">Add more commits to an open<br/> PR after you've created it</li>
+              <li class="fragment">Rebase a branch that has been made public</li>
+              <li class="fragment">Included unrelated edits in a commit</li>
+              <li class="fragment">Make logic changes & whitespace/prettifying changes in the same commit</li>
+              <li class="fragment">Use git for large binary files</li>
             </ul>
           </section>
 
           <section>
             <h2>DO!</h2>
             <ul>
+              <li class="fragment">Use PR's as an on-going record of feature development</li>
               <li class="fragment">Give your PR a good name!</li>
-              <li class="fragment">Let your team know there's a PR to review</li>
-              <li class="fragment">Keep your PR's small</li>
-              <li class="fragment">Use the description to explain what the PR is for</li>
               <li class="fragment">Do a local merge before doing the PR</li>
-              <li class="fragment">Bug your team to get your PR reviewed</li>
+              <li class="fragment">Use <code>git gc</code> occasionally to reduce disk space and speed up other operations</li>
             </ul>
           </section>
 
@@ -1039,15 +1141,29 @@ stash@{2}: WIP on master: 21d80a5... added number to log
               <li class="fragment">Add <strong>.diff</strong> or <strong>.patch</strong> to compare view page, pull request, or commit page URLs</li>
               <li class="fragment">You can reply to notification emails instead of going to GitHub</li>
               <li class="fragment">You can PR from branch to branch</li>
-              
+
             </ul>
           </section>
-
+        </section>
+        <section>
           <section>
             <h1>That's All Folks</h1>
+					  <p>
+						  <small>Created by <a href="http://seanhagen.ca">Sean Patrick Hagen</a> / <a href="http://twitter.com/seanhagen">@seanhagen</a></small>
+					  </p>
+
+            <p>
+              Get the presentation at:
+              <a href="http://github.com/seanhagen/git-presentation">github.com/seanhagen/git-presentation</a>
+            </p>
+
+            <p>Or clone it from git@github.com:seanhagen/git-presentation.git</p>
+
+            <p>Other resources:</p>
             <ul>
               <li>http://zachholman.com/talk/git-github-secrets/</li>
               <li>http://git-scm.com/book/</li>
+              <li>http://nathanleclaire.com/blog/2014/09/14/dont-be-scared-of-git-rebase/</li>
             </ul>
           </section>
 
@@ -1070,7 +1186,7 @@ stash@{2}: WIP on master: 21d80a5... added number to log
 			history: true,
 			center: true,
       width: 1324,
-      
+
 			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
