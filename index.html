@@ -347,6 +347,16 @@
           </section>
 
           <section>
+            <h2>Examples</h2>
+            <p>Here are a few examples</p>
+            <ul>
+              <li class="fragment">git pull</li>
+              <li class="fragment">git pull origin my-branch</li>
+              <li class="fragment">git pull coworkers-repo my-branch</li>
+            </ul>
+          </section>
+
+          <section>
             <h2>Careful!</h2>
             <h3>Git auto-merges when you do a pull</h3>
           </section>
@@ -379,7 +389,7 @@
 
           <section>
             <p>Or you could just set up a remote to <br/>track all the other repositories:</p>
-            <p><code>git remote add upstream git@github.com:broadbandtv/Porcupine.git</code></p>
+            <p><code>git remote add upstream git@github.com:octopress/octopress.git</code></p>
 
             <br/><br/>
             <div class="fragment">
@@ -430,10 +440,8 @@
 
           <section>
             <h2>Pushed A Change That You Shouldn't Have?</h2>
-            <div class="fragment">
-              <img src="/img/tumblr_mf4wi1Orti1rnvwt1.gif" />
-              <p>That's okay.</p>
-            </div>
+            <img src="/img/tumblr_mf4wi1Orti1rnvwt1.gif" class="fragment"/>
+            <p class="fragment">That's okay.</p>
           </section>
 
           <section>
@@ -509,7 +517,21 @@
                 <code>git checkout -b totally-awesome origin/totally-awesome</code>
               </p>
             </div>
+          </section>
 
+          <section>
+            <h3>Tracking!</h3>
+
+            <p>Checking out a branch using the <br/><code>git checkout -b &lt;name&gt; &lt;remote/branch-name&gt;</code><br/> ensures that the branch <i>tracks</i> the same branch on the remote</p>
+
+            <div class="fragment">
+              <p>A long form way of doing the same would be the following:</p>
+              <ul>
+                <li class="fragment"><code>git branch my-feature</code></li>
+                <li class="fragment"><code>git checkout my-feature</code></li>
+                <li class="fragment"><code>git branch -u origin/my-feature</code></li>
+              </ul>
+            </div>
           </section>
 
           <section>
@@ -594,10 +616,10 @@
             <p>They're not pretty.</p>
             <pre>
               <<<<<<< HEAD:mergetest
-                      This is my third line
-                      =======
-                      This is a fourth line I am adding
-                      >>>>>>> 4e2b407f501b68f8588aa645acafffa0224b9b78:mergetest
+              This is my third line
+              =======
+              This is a fourth line I am adding
+              >>>>>>> 4e2b407f501b68f8588aa645acafffa0224b9b78:mergetest
             </pre>
 
             <p>This doesn't look too bad, but try to resolve a merge conflict that spans hundreds of lines.</p>
@@ -1127,6 +1149,7 @@ stash@{2}: WIP on master: 21d80a5... added number to log
               <li class="fragment">Give your PR a good name!</li>
               <li class="fragment">Do a local merge before doing the PR</li>
               <li class="fragment">Use <code>git gc</code> occasionally to reduce disk space and speed up other operations</li>
+              <li class="fragment">Create a <code>README.md</code> file</li>
             </ul>
           </section>
 
@@ -1148,6 +1171,9 @@ stash@{2}: WIP on master: 21d80a5... added number to log
         <section>
           <section>
             <h1>That's All Folks</h1>
+            <p>
+              Email me at sean.hagen@gmail.com
+            </p>
 					  <p>
 						  <small>Created by <a href="http://seanhagen.ca">Sean Patrick Hagen</a> / <a href="http://twitter.com/seanhagen">@seanhagen</a></small>
 					  </p>
